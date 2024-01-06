@@ -8,5 +8,5 @@ However, that TSConfig does not include this file. Either:
 - Create a new TSConfig that includes this file and include it in your parserOptions.project
 See the typescript-eslint docs for more info: https://typescript-eslint.io/linting/troubleshooting#i-get-errors-telling-me-eslint-was-configured-to-run--however-that-tsconfig-does-not--none-of-those-tsconfigs-include-this-fileeslint
   */
-  "include": ["./src/**/*", "./.eslintrc.cjs", "./tailwind.config.mjs", "./astro.config.mjs"]
+  "include": ["./src/**/*", "./.eslintrc.cjs", "./tailwind.config.mjs", "./astro.config.mjs", "./postcss.config.js"]
 }

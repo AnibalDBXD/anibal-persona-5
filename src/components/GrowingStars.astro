@@ -1,0 +1,11 @@
+---
+---
+
+<canvas class="ml-auto right-0 absolute max-w-[40vw]" id="canvas"></canvas>
+<script>
+  import { renderGrowingStars } from '../utils/renderGrowingStars';
+  const canvas = document.getElementById('canvas') as HTMLCanvasElement;
+  if(canvas){
+    renderGrowingStars(canvas)
+  }
+</script>

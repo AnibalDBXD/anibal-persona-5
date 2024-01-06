@@ -1,5 +1,5 @@
 ---
-
+import MenuPage from '../components/MenuPage.astro'
 ---
 
 <html lang="en">
@@ -8,9 +8,15 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Anibal - Persona 5 page</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="p-0 m-0">
+		<MenuPage />
 	</body>
+	<style is:global>
+		@font-face {
+			font-family: 'Persona5MenuFontPrototype-Regular';
+			src: url("/fonts/Persona5MenuFontPrototype-Regular.ttf") format("truetype");
+		}
+	</style>
 </html>
