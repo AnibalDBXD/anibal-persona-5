@@ -4,8 +4,10 @@ import joker from "./images/joker-right.png"
 import p5Left from "./images/p5-left.png"
 import { Image } from "astro:assets"
 import GrowingStars from "./GrowingStars.astro"
+import AnimatedBackground from "./AnimatedBackground.astro";
 ---
-<main class="relative min-w-[1024px] h-screen max-h-screen overflow-hidden">
+<main class="relative h-screen max-h-screen overflow-hidden">
+  <AnimatedBackground />
   <Image src={p5Left} alt="Menu - left" class="object-cover h-screen absolute bg-none select-none" />
   <ItemsList />
   <Image src={joker} alt="Menu - right" class="ml-auto right-0 object-cover h-screen absolute bg-none select-none z-10" />
