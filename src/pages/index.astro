@@ -1,5 +1,6 @@
 ---
-import MenuPage from '../components/MenuPage.astro'
+import MenuSection from '../sections/MenuSection.astro'
+import ContactSection from '../sections/ContactSection.astro'
 ---
 
 <html lang="en">
@@ -8,15 +9,11 @@ import MenuPage from '../components/MenuPage.astro'
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Anibal - Persona 5 page</title>
+		<title>Anibal - Persona styled page</title>
 	</head>
 	<body class="p-0 m-0">
-		<MenuPage />
+		<MenuSection />
+		<div class="h-8 w-full bg-white" />
+		<ContactSection />
 	</body>
-	<style is:global>
-		@font-face {
-			font-family: 'Persona5MenuFontPrototype-Regular';
-			src: url("/fonts/Persona5MenuFontPrototype-Regular.ttf") format("truetype");
-		}
-	</style>
 </html>
