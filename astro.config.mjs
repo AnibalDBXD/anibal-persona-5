@@ -6,6 +6,6 @@ import tailwind from '@astrojs/tailwind'
 export default defineConfig({
   integrations: [tailwind()],
   image: {
-    service: passthroughImageService(),
-  },
+    service: passthroughImageService()
+  }
 })
